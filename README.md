@@ -1,10 +1,2 @@
 kennylandes
 ===========
-
-
-
-
-
-
-
-work, dammit, work
