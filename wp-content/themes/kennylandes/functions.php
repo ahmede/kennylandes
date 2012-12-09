@@ -61,25 +61,3 @@ add_filter( 'user_contactmethods', 'alter_contactmethod', 10, 1 );
 
 
 ?>
-
-// Global Custom Fields - use echo get_option('amazonid'); to trigger
-<?php add_action('admin_menu', 'add_gcf_interface');
-function add_gcf_interface() {
-add_options_page('Global Custom Fields', 'Global Custom Fields', '8', 'functions',
-'editglobalcustomfields');
-}
-function editglobalcustomfields() { ?>
-	<div class="wrap">
-		<h1>Global Custom Fields</h1>
-		<form method="post" action="options.php">
-		<?php wp_nonce_field('update-options') ?>
-			<p><strong>Amazon ID:</strong><br />
-			<input type="text" name="amazonid" size="45"
-			value="<?php echo get_option('amazonid'); ?>" />
-			</p>
-			<p><input type="submit" name="Submit" value="Update Options" /></p>
-			<input type="hidden" name="action" value="update" />
-			<input type="hidden" name="page_options" value="amazonid" />
-		</form>
-	</div>
-<?php } ?>
