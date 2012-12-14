@@ -5,7 +5,7 @@
 				<?php if (have_posts()) : ?>
 					<?php while (have_posts()) : the_post(); ?>
 						<div class="post" id="post-<?php the_ID(); ?>">
-
+						<a href="https://twitter.com/share" class="twitter-share-button" data-via="kennylandes">Tweet</a>
 						<h1><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
 
 						<?php echo get_post_meta($post->ID, 'PostThumb', true); ?>

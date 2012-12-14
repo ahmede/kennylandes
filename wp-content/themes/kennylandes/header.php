@@ -3,6 +3,37 @@
     <head>
         <meta charset="<?php bloginfo('charset'); ?>">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <!--Facebook OpenGraph tags -->
+        <meta property="og:title" content="
+        	<?php if (function_exists('is_tag') && is_tag()) {
+			single_tag_title('Tag Archive for &quot;'); echo '&quot; - ';
+			} elseif (is_archive()) {
+			wp_title(''); echo ' Archive - ';
+			} elseif (is_search()) {
+			echo 'Search for &quot;'.wp_specialchars($s).'&quot; - ';
+			} elseif (!(is_404()) && (is_single()) || (is_page())) {
+			wp_title(''); echo ' - ';
+			} elseif (is_404()) {
+			echo 'Not Found - ';
+			}
+			if (is_home()) {
+			bloginfo('name'); echo ' - '; bloginfo('description');
+			} else {
+			bloginfo('name');
+			}
+			if ($paged > 1) {
+			echo ' - page '. $paged;
+			} ?>
+			" />
+        if website
+        <meta property="og:type" content="website" />
+        if blog
+        <meta property="og:type" content="blog" />
+        if article
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="<?php the_permalink(); ?>" />
+        <meta property="og:site_name" content="Kenny Landes" />
+        <meta property="og:title" content="" />
         <title>
 			<?php if (function_exists('is_tag') && is_tag()) {
 			single_tag_title('Tag Archive for &quot;'); echo '&quot; - ';
@@ -37,6 +68,17 @@
         <?php wp_head(); ?>
     </head>
     <body>
+    <!-- Powers Facebook Like -->
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s);
+		js.id = id;
+		js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+		fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
 	    <header>
 	        <div class="navbar navbar-inverse navbar-fixed-top">
 	            <div class="navbar-inner">
@@ -77,4 +119,6 @@
 	                </div>
 	            </div>
 	        </div>
+	        <div class="fb-like" data-href="http://kennylandes.com" data-send="true" data-width="55" data-show-faces="false"></div>
+	        <a href="https://twitter.com/kennylandes" class="twitter-follow-button" data-show-count="false" data-size="large" data-show-screen-name="false">Follow @kennylandes</a>
 	    </header>
