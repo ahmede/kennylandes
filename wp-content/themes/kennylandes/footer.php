@@ -1,6 +1,6 @@
             <hr>
             <footer>
-                <p>&copy; <?php echo date("Y"); ?> <?php echo bloginfo('name'); ?></p>
+                <p>&copy; 1967 &ndash; <?php echo date("Y"); ?> <?php echo bloginfo('name'); ?>. Now don't get all janky with my stuff, okay?</p>
             </footer>
         </div> <!-- /container -->
         <script src="<?php bloginfo('template_url'); ?>/js/vendor/bootstrap.min.js"></script>

@@ -26,6 +26,7 @@ body {
 .search {
 	margin-top: 7px;
 	float:right;
+	height:36px;
 }
 
 /* home.php */
