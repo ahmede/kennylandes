@@ -32,7 +32,7 @@
         <!--if article-->
         <meta property="og:type" content="article" />
         <meta property="og:url" content="<?php the_permalink(); ?>" />
-        <meta property="og:site_name" content="Kenny Landes" />
+        <meta property="og:site_name" content="<?php bloginfo('name'); ?>" />
         <title>
 			<?php if (function_exists('is_tag') && is_tag()) {
 			single_tag_title('Tag Archive for &quot;'); echo '&quot; - ';
