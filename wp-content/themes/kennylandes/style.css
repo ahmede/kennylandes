@@ -1,0 +1,15 @@
+/*
+Theme Name: Kenny Landes
+Theme URI: http://kennylandes.com/kennylandes/
+Description: My own original custom theme by
+<a href="http://kennylandes.com/">Kenny Landes</a>
+Version: 1 (WP3.4.2)
+Author: Kenny Landes
+Author URI: http://kennylandes.com/
+Tags: kenny landes, kplandes, kennylandes, kennyyoubastard
+*/
+@charset "utf-8";
+@import url(css/bootstrap.min.css);
+@import url(css/bootstrap-responsive.min.css);
+@import url(css/style.css);
+/* Author styles in css/main.css */
