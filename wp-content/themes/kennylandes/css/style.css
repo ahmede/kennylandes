@@ -2,6 +2,10 @@
 body {
     padding-top: 60px;
     padding-bottom: 40px;
+    background:#fff;
+}
+header {
+	height:8em;
 }
 .navbar .nav > li {
     margin-top: 2px;
