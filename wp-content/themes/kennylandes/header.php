@@ -28,11 +28,11 @@
 		" />
 
 	<?php if ( !(is_404()) && (is_single()) ) { ?>
-	    '<meta property="og:type" content="article" />'
+	    <meta property="og:type" content="article" />
 	<?php } else if ( !(is_404()) && (is_page()) ) { ?>
-    	'<meta property="og:type" content="blog" />'
+    	<meta property="og:type" content="blog" />
 	<?php } else { ?>
-    	'<meta property="og:type" content="website" />'
+    	<meta property="og:type" content="website" />
     <?php } ?>
 
     <meta property="og:url" content="<?php the_permalink(); ?>" />
