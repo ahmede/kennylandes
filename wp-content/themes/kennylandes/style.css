@@ -9,7 +9,15 @@ Author URI: http://kennylandes.com/
 Tags: kenny landes, kplandes, kennylandes, kennyyoubastard
 */
 @charset "utf-8";
-@import url(css/bootstrap.min.css);
-@import url(css/bootstrap-responsive.min.css);
+@import url(css/fonts.css);
 @import url(css/style.css);
-/* Author styles in css/style.css */
+/*
+@import url(css/style-green.css);
+@import url(css/style-orange.css);
+*/
+@import url(css/fullwidth.css);
+@import url(css/revolution-settings.css);
+@import url(css/flexslider.css);
+@import url(css/prettyPhoto.css);
+@import url(css/main.css);
+/* Author styles in css/main.css */

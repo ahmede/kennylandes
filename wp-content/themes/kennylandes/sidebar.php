@@ -1,4 +1,7 @@
 <aside>
+
+<?php get_search_form(); ?>
+
 <?php wp_get_archives(array(
 	'type' => 'postbypost', // or daily, weekly, monthly, yearly
 	'limit' => 10, // maximum number shown
