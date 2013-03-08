@@ -63,16 +63,16 @@
         <script src="<?php bloginfo('template_url'); ?>/js/script.js"></script>
 
 		<!-- Css Switcher -->
-		<script src="<?php bloginfo('template_url'); ?>js/vendor/styleswitch.js"</script>
+		<script src="<?php bloginfo('template_url'); ?>/js/vendor/styleswitch.js"</script>
 		<!-- Css Switcher -->
 
 	    <!-- Responsive Navigation -->
-	    <script src="<?php bloginfo('template_url'); ?>js/vendor/selectnav.min.js"></script>
+	    <script src="<?php bloginfo('template_url'); ?>/js/vendor/selectnav.min.js"></script>
 	    <!-- /Responsive Navigation -->
 
 		<!-- Revolution Slider -->
-		<script src="<?php bloginfo('template_url'); ?>js/vendor/rs-plugin/jquery.themepunch.plugins.min.js"></script>
-		<script src="<?php bloginfo('template_url'); ?>js/vendor/rs-plugin/jquery.themepunch.revolution.min.js"></script>
+		<script src="<?php bloginfo('template_url'); ?>/js/vendor/rs-plugin/jquery.themepunch.plugins.min.js"></script>
+		<script src="<?php bloginfo('template_url'); ?>/js/vendor/rs-plugin/jquery.themepunch.revolution.min.js"></script>
 		<script>
 			var tpj=jQuery;
 			tpj.noConflict();
