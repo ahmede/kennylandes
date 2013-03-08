@@ -51,7 +51,7 @@
 		echo 'Not Found - ';
 		}
 		if (is_home()) {
-		bloginfo('name'); echo ' | '.bloginfo('description');
+		bloginfo('name'); echo ' | '; bloginfo('description');
 		} else {
 		bloginfo('name');
 		}

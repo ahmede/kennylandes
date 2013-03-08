@@ -6,11 +6,7 @@
             	<div class="footer-left">
 
                     <ul class="footer-menu">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Professional</a></li>
-                        <li><a href="#">Social</a></li>
-                        <li><a href="#">News</a></li>
-                        <li class="footer-last"><a href="#">Contact</a></li>
+			        	<?php wp_list_pages('title_li=&depth=1'); ?>
                     </ul>
 
                     <ul class="footer-address">
