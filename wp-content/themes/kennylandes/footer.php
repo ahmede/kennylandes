@@ -1,3 +1,7 @@
+
+</div>
+<!-- /Main Container -->
+
 <!-- Footer -->
         <div id="footer">
 

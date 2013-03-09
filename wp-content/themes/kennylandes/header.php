@@ -109,12 +109,3 @@
         <!-- /Navigation -->
 
     </div>
-    <!-- /Header -->
-<!--
-    <hgroup>
-    	<h1><?php bloginfo('name'); ?></h1> | <h3><?php bloginfo('description'); ?></h3>
-    </hgroup>
--->
-
-</div>
-<!-- /Main Container -->
