@@ -1,6 +1,5 @@
 
-</div>
-<!-- /Main Container -->
+</div><!-- /Main Container -->
 
 <!-- Footer -->
         <div id="footer">
@@ -15,7 +14,7 @@
 
                     <ul class="footer-address">
                     	<li><img src="<?php bloginfo('template_url'); ?>/img/home-icon.png"/>San Francisco, CA, USA</li>
-                        <li><img src="<?php bloginfo('template_url'); ?>/img/phone-icon.png"/><a href="tel:14152652818">415.265.2818</li>
+                        <li><img src="<?php bloginfo('template_url'); ?>/img/phone-icon.png"/><a href="tel:14154832818">415.483.2818</li>
                         <li><img src="<?php bloginfo('template_url'); ?>/img/email-icon.png"/><a href="mailto:kenny@kennylandes.com">kenny@kennylandes.com</a></li>
                		</ul>
 
@@ -40,8 +39,7 @@
             	<!-- Copyright -->
                 <ul class="copyright">
                     <li>&copy; 1967 &ndash; <?php echo date("Y"); ?> <?php echo bloginfo('name'); ?>. Now don't get all janky with my stuff, mkay?</li>
-                </ul>
-                <!-- /Copyright -->
+                </ul><!-- /Copyright -->
 
                 <!-- Social Links -->
                 <ul class="social-links">
@@ -50,20 +48,18 @@
                     <?php if ( (get_the_author_meta('linkedin')) ) { ?><li class="linkedin"><a href="<?php echo 'http://www.linkedin.com/'.get_the_author_meta('linkedin') ?>">LinkedIn</a></li><?php } ?>
                     <?php if ( (get_the_author_meta('googleplus')) ) { ?><li class="google"><a href="<?php echo 'http://www.plus.google.com/'.get_the_author_meta('googleplus') ?>">Google+</a></li><?php } ?>
                     <?php if ( (get_the_author_meta('skype')) ) { ?><li class="skype"><a href="<?php echo 'http://www.skype.com/'.get_the_author_meta('skype') ?>">Skype</a></li><?php } ?>
-                </ul>
-                <!-- /Social Links -->
+                </ul><!-- /Social Links -->
 
                 </div>
 
             </div>
 
-        </div>
-        <!-- /Footer -->
+        </div><!-- /Footer -->
 
         <script src="<?php bloginfo('template_url'); ?>/js/script.js"></script>
 
 		<!-- Css Switcher -->
-		<script src="<?php bloginfo('template_url'); ?>/js/vendor/styleswitch.js"</script>
+		<!-- <script src="<?php bloginfo('template_url'); ?>/js/vendor/styleswitch.js"</script> -->
 		<!-- Css Switcher -->
 
 	    <!-- Responsive Navigation -->
@@ -115,7 +111,7 @@
         /CSS Switcher - Remove this -->
 
         <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            var _gaq=[['_setAccount','UA-8348479-1'],['_trackPageview']];
             (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
             g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
             s.parentNode.insertBefore(g,s)}(document,'script'));

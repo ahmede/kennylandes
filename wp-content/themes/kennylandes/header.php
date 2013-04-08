@@ -79,7 +79,7 @@
 
 <body>
 
-<!-- Powers Facebook Like -->
+<!-- Powers Facebook -->
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
 	  var js, fjs = d.getElementsByTagName(s)[0];
@@ -100,7 +100,7 @@
 	<!-- Header -->
     <div id="header" >
 
-        <a href="<?php the_permalink(); ?>" id="logo"></a>
+        <a href="/" id="logo"></a>
 
         <!-- Navigation -->
         <ul id="navigation">

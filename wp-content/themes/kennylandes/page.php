@@ -32,7 +32,7 @@
 		                	<?php echo get_post_meta($post->ID, 'PostThumb', true); ?>
 		                    <li class="author"><?php the_author(); ?></li>
 		                    <li class="date"><?php the_time('F jS,Y'); ?></li>
-		                    <li class="category"><?php the_category(', '); ?></li>
+		                    <li class="category"><?ph p the_category(', '); ?></li>
 		                    <li class="tag"><?php the_tags('Tags: ', ', ', '<br />'); ?></li>
 		                    <li class="comment"><?php comments_popup_link('No Comments;', '1 Comment', '% Comments'); ?></li>
 		                </ul>

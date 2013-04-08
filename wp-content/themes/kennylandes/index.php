@@ -38,8 +38,7 @@
 			<div class="tp-bannertimer"></div>
 		</div>
 	</div>
-</div>
-<!-- /Revolution Slider -->
+</div><!-- /Revolution Slider -->
 
 <!-- Main Container -->
 <div id="body-wrapper">
@@ -85,13 +84,10 @@
                 </div>
             </div>
 
-        </div>
-        <!-- /Features -->
+        </div><!-- /Features -->
 
-    </div>
-    <!-- /Content -->
+    </div><!-- /Content -->
 
-</div>
-<!-- /Main Container -->
+</div><!-- /Main Container -->
 
 <?php get_footer(); ?>
