@@ -1,5 +1,8 @@
 <?php get_header(); ?>
 
+<!-- Main Container -->
+<div id="body-wrapper">
+
 	<!-- Content -->
 	<div id="content" class="container clearfix">
 
@@ -59,7 +62,8 @@
 
 		<?php get_sidebar(); ?>
 
-	</div>
-	<!-- /Content -->
+	</div><!-- /Content -->
+
+</div><!-- /Main Container -->
 
 <?php get_footer(); ?>

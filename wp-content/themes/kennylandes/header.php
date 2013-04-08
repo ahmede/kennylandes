@@ -104,8 +104,9 @@
 
         <!-- Navigation -->
         <ul id="navigation">
-        	<?php wp_list_pages('title_li='); ?>
-        </ul>
-        <!-- /Navigation -->
+        	<?php wp_list_pages("title_li=&depth=2"); ?>
+        </ul><!-- /Navigation -->
 
-    </div>
+    </div><!-- /Header -->
+
+</div><!-- /Main Container -->
