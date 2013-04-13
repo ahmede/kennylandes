@@ -1,7 +1,18 @@
+/* header.php */
+
 #logo {
 	background: url("../img/logo.png") no-repeat scroll 0 0 transparent;
     height: 48px;
     margin: 12px;
     width: 190px;
+    position: relative;
 }
 
+#gravatar {
+	background: url("http://www.gravatar.com/avatar/f688fc76f04dba123beca8c856915f2e.png?s=48") no-repeat scroll 0 0 transparent;
+	width:48px;
+	height:48px;
+	position: absolute;
+	left: 1px;
+	top: 1px;
+}

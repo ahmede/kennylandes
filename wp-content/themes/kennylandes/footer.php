@@ -20,6 +20,7 @@
                 <div class="footer-right" id="footer-newsletter">
 
                     <p>Newsletter</p>
+
                     <form id="newsletter"  method="post">
                         <input type="text" onfocus="if(this.value == 'E-mail here') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'E-mail here'; }" value="E-mail here" class="newsletter">
                         <button type="submit">Submit</button>
@@ -33,19 +34,19 @@
 
             	<div id="footer-center-bottom" class="container">
 
-            	<!-- Copyright -->
-                <ul class="copyright">
-                    <li>&copy; 1967 &ndash; <?php echo date("Y"); ?> <?php echo bloginfo('name'); ?>. Now don't get all janky with my stuff, mkay?</li>
-                </ul><!-- /Copyright -->
+	            	<!-- Copyright -->
+	                <ul class="copyright">
+	                    <li>&copy; 1967 &ndash; <?php echo date("Y"); ?> <?php echo bloginfo('name'); ?>. Now don't get all janky with my stuff, mkay?</li>
+	                </ul><!-- /Copyright -->
 
-                <!-- Social Links -->
-                <ul class="social-links">
-                    <?php if ( (get_the_author_meta('facebook')) ) { ?><li class="facebook"><a href="<?php echo 'http://www.facebook.com/'.get_the_author_meta('facebook') ?>">Facebook</a></li><?php } ?>
-                    <?php if ( (get_the_author_meta('twitter')) ) { ?><li class="twitter"><a href="<?php echo 'http://www.twitter.com/'.get_the_author_meta('twitter') ?>">Twitter</a></li><?php } ?>
-                    <?php if ( (get_the_author_meta('linkedin')) ) { ?><li class="linkedin"><a href="<?php echo 'http://www.linkedin.com/'.get_the_author_meta('linkedin') ?>">LinkedIn</a></li><?php } ?>
-                    <?php if ( (get_the_author_meta('googleplus')) ) { ?><li class="google"><a href="<?php echo 'http://www.plus.google.com/'.get_the_author_meta('googleplus') ?>">Google+</a></li><?php } ?>
-                    <?php if ( (get_the_author_meta('skype')) ) { ?><li class="skype"><a href="<?php echo 'http://www.skype.com/'.get_the_author_meta('skype') ?>">Skype</a></li><?php } ?>
-                </ul><!-- /Social Links -->
+	                <!-- Social Links -->
+	                <ul class="social-links">
+	                    <?php if ( (get_the_author_meta('facebook')) ) { ?><li class="facebook"><a href="<?php echo 'http://www.facebook.com/'.get_the_author_meta('facebook') ?>">Facebook</a></li><?php } ?>
+	                    <?php if ( (get_the_author_meta('twitter')) ) { ?><li class="twitter"><a href="<?php echo 'http://www.twitter.com/'.get_the_author_meta('twitter') ?>">Twitter</a></li><?php } ?>
+	                    <?php if ( (get_the_author_meta('linkedin')) ) { ?><li class="linkedin"><a href="<?php echo 'http://www.linkedin.com/'.get_the_author_meta('linkedin') ?>">LinkedIn</a></li><?php } ?>
+	                    <?php if ( (get_the_author_meta('googleplus')) ) { ?><li class="google"><a href="<?php echo 'http://www.plus.google.com/'.get_the_author_meta('googleplus') ?>">Google+</a></li><?php } ?>
+	                    <?php if ( (get_the_author_meta('skype')) ) { ?><li class="skype"><a href="<?php echo 'http://www.skype.com/'.get_the_author_meta('skype') ?>">Skype</a></li><?php } ?>
+	                </ul><!-- /Social Links -->
 
                 </div>
 

@@ -100,7 +100,9 @@
 	<!-- Header -->
     <div id="header" >
 
-        <a href="/" id="logo"></a>
+        <a href="/" id="logo">
+        	<div id="gravatar"></div>
+        </a>
 
         <!-- Navigation -->
         <ul id="navigation">
