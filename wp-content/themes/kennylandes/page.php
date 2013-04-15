@@ -15,7 +15,7 @@
 		<!-- Page title -->
 		<nav id="page-title" >
 
-			<h1>The only bad press is no press</h1>
+			<h1>page.php The only bad press is no press</h1>
 
 		</nav>
 		<!-- /Page title -->
