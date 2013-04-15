@@ -46,7 +46,7 @@
 		} elseif (is_search()) {
 		echo 'Search for &quot;'.wp_specialchars($s).'&quot; - ';
 		} elseif (!(is_404()) && (is_single()) || (is_page())) {
-		wp_title(''); echo ' - ';
+		wp_title(''); echo '';
 		} elseif (is_404()) {
 		echo 'Not Found - ';
 		}
