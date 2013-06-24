@@ -6,7 +6,6 @@
 	<div class="fullwidthbanner-container">
 		<div class="fullwidthbanner">
 			<ul>
-<!--
 				<li data-transition="fade" data-slotamount="10" data-thumb="<?php bloginfo('template_url'); ?>/img/thumbs/thumb1.jpg">
 					<img src="<?php bloginfo('template_url'); ?>/img/slides/thumb1.jpg">
 	                <div class="caption lft" data-x="0" data-y="10" data-speed="900" data-start="900" data-easing="easeOutExpo"><img src="<?php bloginfo('template_url'); ?>/img/slides/glare.png"></div>
@@ -19,13 +18,13 @@
 					</div>
 	                <div class="caption sfb" data-x="510" data-y="360" data-speed="1000" data-start="1800" data-easing="easeOutBack"><a target="_blank" href="/blog/" class="btn-image">Read my blog</a></div>
 				</li>
+<!--
 				<li data-transition="slideup" data-slotamount="7" data-thumb="<?php bloginfo('template_url'); ?>/img/thumbs/thumb2.png">
 					<img src="<?php bloginfo('template_url'); ?>/img/slides/thumb2.jpg">
 	                <div class="caption sfb" data-x="0" data-y="10" data-speed="900" data-start="900" data-easing="easeOutSine"><img src="<?php bloginfo('template_url'); ?>/img/slides/glare2.png"></div>
 	                <div class="caption lft" data-x="140" data-y="50" data-speed="900" data-start="1700" data-easing="easeOutBack"><img src="<?php bloginfo('template_url'); ?>/img/model3.png"></div>
 	                <div class="caption lfb big_grey"  data-x="112" data-y="350" data-speed="600" data-start="1800" data-easing="easeOutExpo"><?php echo bloginfo('description'); ?></div>
 				</li>
--->
 				
 				<li data-transition="fade" data-slotamount="10" data-thumb="<?php bloginfo('template_url'); ?>/img/thumbs/thumb1.jpg">
 					<img src="<?php bloginfo('template_url'); ?>/img/slides/thumb1.jpg">
@@ -36,8 +35,8 @@
 					<div class="caption lfr medium_grey"  data-x="510" data-y="230" data-speed="300" data-start="2500" data-easing="easeOutExpo">Specification</div>
 	                <div class="caption lfr small_text"  data-x="510" data-y="260" data-speed="300" data-start="2600" data-easing="easeOutExpo">Contrary to popular belief Lorem Ipsum is not simply random text. It has roots<br> in a piece of classical Latin literature from 45 BC making it over 2000 years old.<br> Richard McClintock a latin professor at Hampden-Sydney College in Virginia <br>looked up one of the more obscure words.</div>
 	                <!-- <div class="caption sfb" data-x="510" data-y="360" data-speed="1000" data-start="1800" data-easing="easeOutBack"><a href="#" class="btn-image">Read more</a></div> -->
-				</li>
-				
+				</li>				
+-->
 			</ul>
 			<div class="tp-bannertimer"></div>
 		</div>
