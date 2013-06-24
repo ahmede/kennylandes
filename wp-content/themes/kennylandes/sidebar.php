@@ -1,14 +1,11 @@
-<!-- Sidebar -->
+<!-- Sidebar 
 <div id="sidebar">
 
 
-	<!-- Search -->
 	<h4>Search</h4>
 	<input type="text" onfocus="if(this.value == 'Search in blog') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Search in blog'; }" value="Search in blog" class="search">
-	<!-- /Search -->
 
 
-	<!-- Blog Categories -->
 	<div class="widget">
 	    <h4>Blog Categories</h4>
 	    <ul class="categories">
@@ -20,23 +17,19 @@
 	        <li><a href="#">Email marketing</a></li>
 	    </ul>
 	</div>
-	<!-- /Blog Categories -->
 
 
 
 
-	<!-- Text Widget -->
 	<div class="widget">
 	    <h4>Text Widget</h4>
 	    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dui orci, dapibus non luctus, ultrices vel nunc. Donec lacinia mattis erat amet.</p>
 	</div>
-	<!-- /Text Widget -->
 
 
 
 
 
-	<!-- Accordion -->
 	<div class="widget clearfix">
 	    <h4>Accordion widget</h4>
 
@@ -54,13 +47,11 @@
 
 
 	</div>
-	<!-- Accordion -->
 
 
 
 
 
-	<!-- Twitter Feed -->
 	<div class="widget">
 	    <h4>Latest Tweets</h4>
 	    <div class="twitter-post">
@@ -73,9 +64,8 @@
 
 	    </div>
 	</div>
-	<!-- /Twitter Feed -->
 
 
 
 </div>
-<!-- /Sidebar -->
+-->

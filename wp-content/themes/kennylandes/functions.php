@@ -20,6 +20,19 @@ function no_admin_bar()
 }
 add_filter('show_admin_bar' , 'no_admin_bar');
 
+// Allow HTML in User description field
+remove_filter('pre_user_description', 'wp_filter_kses');
+
+// Allow HTML in Category description field
+$filters = array('term_description' , 'category_description' , 'pre_term_description');
+foreach ( $filters as $filter ) {
+remove_filter($filter, 'wptexturize');
+remove_filter($filter, 'convert_chars');
+remove_filter($filter, 'wpautop');
+remove_filter($filter, 'wp_filter_kses');
+remove_filter($filter, 'strip_tags');
+}
+
 // Remove or Add user contact fields, use in author page, etc. as needed
 function alter_contactmethod( $contactmethods ) {
 
@@ -34,7 +47,23 @@ function alter_contactmethod( $contactmethods ) {
   // Remove Jabber
   if ( isset( $contactmethods['jabber'] ) )
     unset( $contactmethods['jabber'] );
-
+    
+  // Add Address
+  if ( !isset( $contactmethods['address'] ) )
+    $contactmethods['address'] = 'Address';
+    
+  // Add Address URL
+  if ( !isset( $contactmethods['address_url'] ) )
+    $contactmethods['address_url'] = 'Address URL';
+        
+  // Add Phone Number
+  if ( !isset( $contactmethods['phone'] ) )
+    $contactmethods['phone'] = 'Phone';
+    
+  // Add Phone Number URL
+  if ( !isset( $contactmethods['phone_url'] ) )
+    $contactmethods['phone_url'] = 'Phone URL';
+            
   // Add Twitter
   if ( !isset( $contactmethods['twitter'] ) )
     $contactmethods['twitter'] = 'Twitter';

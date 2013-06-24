@@ -1,6 +1,6 @@
 <!-- Footer -->
         <div id="footer">
-
+		<?php $user_info = get_userdata(1); ?>
         	<div id="footer-center" class="container">
 
             	<div class="footer-left">
@@ -10,21 +10,30 @@
                     </ul>
 
                     <ul class="footer-address">
-                    	<li><img src="<?php bloginfo('template_url'); ?>/img/home-icon.png"/>San Francisco, CA, USA</li>
-                        <li><img src="<?php bloginfo('template_url'); ?>/img/phone-icon.png"/><a href="tel:14154832818">415.483.2818</li>
-                        <li><img src="<?php bloginfo('template_url'); ?>/img/email-icon.png"/><a href="mailto:kenny@kennylandes.com">kenny@kennylandes.com</a></li>
+                    	<li><a href="<?php echo $user_info->address_url; ?>"><img src="<?php bloginfo('template_url'); ?>/img/home-icon.png"/><?php echo $user_info->address; ?></a></li>
+                        <li><a href="tel:<?php echo $user_info->phone_url; ?>"><img src="<?php bloginfo('template_url'); ?>/img/phone-icon.png"/><?php echo $user_info->phone; ?></a></li>
+                        <li><a href="mailto:<?php echo $user_info->user_email; ?>"><img src="<?php bloginfo('template_url'); ?>/img/email-icon.png"/><?php echo $user_info->user_email; ?></a></li>
                		</ul>
 
                 </div>
 
                 <div class="footer-right" id="footer-newsletter">
 
-                    <p>Newsletter</p>
-
-                    <form id="newsletter"  method="post">
+	                <!-- Social Links -->
+	                <ul class="social-links">
+	                    <li class="facebook"><a href="<?php echo 'http://www.facebook.com/'.$user_info->facebook; ?>">Facebook</a></li>
+	                    <li class="twitter"><a href="<?php echo 'http://www.twitter.com/'.$user_info->twitter; ?>">Twitter</a></li>
+	                    <li class="linkedin"><a href="<?php echo 'http://www.linkedin.com/'.$user_info->linkedin; ?>">LinkedIn</a></li>
+	                    <li class="google"><a href="<?php echo 'http://www.plus.google.com/'.$user_info->googleplus; ?>">Google+</a></li>
+	                    <li class="skype"><a href="<?php echo 'http://www.skype.com/'.$user_info->skype; ?>">Skype</a></li>
+	                </ul><!-- /Social Links -->
+	                
+                    <!--
+					<form id="newsletter"  method="post">
                         <input type="text" onfocus="if(this.value == 'E-mail here') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'E-mail here'; }" value="E-mail here" class="newsletter">
                         <button type="submit">Submit</button>
                     </form>
+					-->
 
                 </div>
 
@@ -38,15 +47,6 @@
 	                <ul class="copyright">
 	                    <li>&copy; 1967 &ndash; <?php echo date("Y"); ?> <?php echo bloginfo('name'); ?>. Now don't get all janky with my stuff, mkay?</li>
 	                </ul><!-- /Copyright -->
-
-	                <!-- Social Links -->
-	                <ul class="social-links">
-	                    <?php if ( (get_the_author_meta('facebook')) ) { ?><li class="facebook"><a href="<?php echo 'http://www.facebook.com/'.get_the_author_meta('facebook') ?>">Facebook</a></li><?php } ?>
-	                    <?php if ( (get_the_author_meta('twitter')) ) { ?><li class="twitter"><a href="<?php echo 'http://www.twitter.com/'.get_the_author_meta('twitter') ?>">Twitter</a></li><?php } ?>
-	                    <?php if ( (get_the_author_meta('linkedin')) ) { ?><li class="linkedin"><a href="<?php echo 'http://www.linkedin.com/'.get_the_author_meta('linkedin') ?>">LinkedIn</a></li><?php } ?>
-	                    <?php if ( (get_the_author_meta('googleplus')) ) { ?><li class="google"><a href="<?php echo 'http://www.plus.google.com/'.get_the_author_meta('googleplus') ?>">Google+</a></li><?php } ?>
-	                    <?php if ( (get_the_author_meta('skype')) ) { ?><li class="skype"><a href="<?php echo 'http://www.skype.com/'.get_the_author_meta('skype') ?>">Skype</a></li><?php } ?>
-	                </ul><!-- /Social Links -->
 
                 </div>
 
