@@ -106,7 +106,7 @@
 
         <!-- Navigation -->
         <ul id="navigation">
-        	<?php wp_list_pages("title_li=&depth=2&exclude=948, 877, 864"); ?>
+        	<?php wp_list_pages("title_li=&depth=1"); ?>
         </ul><!-- /Navigation -->
 
     </div><!-- /Header -->
