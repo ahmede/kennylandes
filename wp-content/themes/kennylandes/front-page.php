@@ -6,6 +6,7 @@
 	<div class="fullwidthbanner-container">
 		<div class="fullwidthbanner">
 			<ul>
+<!--
 				<li data-transition="fade" data-slotamount="10" data-thumb="<?php bloginfo('template_url'); ?>/img/thumbs/thumb1.jpg">
 					<img src="<?php bloginfo('template_url'); ?>/img/slides/thumb1.jpg">
 	                <div class="caption lft" data-x="0" data-y="10" data-speed="900" data-start="900" data-easing="easeOutExpo"><img src="<?php bloginfo('template_url'); ?>/img/slides/glare.png"></div>
@@ -24,6 +25,7 @@
 	                <div class="caption lft" data-x="140" data-y="50" data-speed="900" data-start="1700" data-easing="easeOutBack"><img src="<?php bloginfo('template_url'); ?>/img/model3.png"></div>
 	                <div class="caption lfb big_grey"  data-x="112" data-y="350" data-speed="600" data-start="1800" data-easing="easeOutExpo"><?php echo bloginfo('description'); ?></div>
 				</li>
+-->
 				
 				<li data-transition="fade" data-slotamount="10" data-thumb="<?php bloginfo('template_url'); ?>/img/thumbs/thumb1.jpg">
 					<img src="<?php bloginfo('template_url'); ?>/img/slides/thumb1.jpg">
