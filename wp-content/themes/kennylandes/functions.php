@@ -33,60 +33,20 @@ remove_filter($filter, 'wp_filter_kses');
 remove_filter($filter, 'strip_tags');
 }
 
-// Remove or Add user contact fields, use in author page, etc. as needed
-function alter_contactmethod( $contactmethods ) {
-
-  // Remove Yahoo YIM
-  if ( isset( $contactmethods['yim'] ) )
-    unset( $contactmethods['yim'] );
-
-  // Remove AIM
-  if ( isset( $contactmethods['aim'] ) )
-    unset( $contactmethods['aim'] );
-
-  // Remove Jabber
-  if ( isset( $contactmethods['jabber'] ) )
-    unset( $contactmethods['jabber'] );
-    
-  // Add Address
-  if ( !isset( $contactmethods['address'] ) )
-    $contactmethods['address'] = 'Address';
-    
-  // Add Address URL
-  if ( !isset( $contactmethods['address_url'] ) )
-    $contactmethods['address_url'] = 'Address URL';
-        
-  // Add Phone Number
-  if ( !isset( $contactmethods['phone'] ) )
-    $contactmethods['phone'] = 'Phone';
-    
-  // Add Phone Number URL
-  if ( !isset( $contactmethods['phone_url'] ) )
-    $contactmethods['phone_url'] = 'Phone URL';
-            
-  // Add Twitter
-  if ( !isset( $contactmethods['twitter'] ) )
-    $contactmethods['twitter'] = 'Twitter';
-
-  // Add Google Plus
-  if ( !isset( $contactmethods['googleplus'] ) )
-    $contactmethods['googleplus'] = 'Google Plus';
-
-  // Add Facebook
-  if ( !isset( $contactmethods['facebook'] ) )
-    $contactmethods['facebook'] = 'Facebook';
-
-  // Add LinkedIn
-  if ( !isset( $contactmethods['linkedin'] ) )
-    $contactmethods['linkedin'] = 'LinkedIn';
-
-  // Add Skype
-  if ( !isset( $contactmethods['skype'] ) )
-    $contactmethods['skype'] = 'Skype';
-
+function kenny_contactmethods( $contactmethods ) {
+	$removes = array('yim', 'aim', 'jabber');
+	foreach ($removes as $remove)
+	{
+		if (isset ($contactmethods[$remove] ) )
+		unset ($contactmethods[$remove]);
+	}
+	$adds = array('address', 'address_url', 'phone', 'phone_url', 'twitter', 'google', 'facebook', 'linkedin','skype'); // <-- Add other networks here as needed
+	foreach ($adds as $add)
+	{
+		if (!isset ($contactmethods[$add] ) )
+		$contactmethods[$add] = str_replace('_', ' ', ucwords($add));
+	}
   return $contactmethods;
 }
-add_filter( 'user_contactmethods', 'alter_contactmethod', 10, 1 );
-
-
+add_filter( 'user_contactmethods', 'kenny_contactmethods', 10, 1 );
 ?>
