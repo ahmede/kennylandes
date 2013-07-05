@@ -21,11 +21,11 @@
 
 	                <!-- Social Links -->
 	                <ul class="social-links">
+	                	<li class="skype"><a href="<?php echo 'http://www.skype.com/'.$user_info->skype; ?>">Skype</a></li>
 	                    <li class="facebook"><a href="<?php echo 'http://www.facebook.com/'.$user_info->facebook; ?>">Facebook</a></li>
 	                    <li class="twitter"><a href="<?php echo 'http://www.twitter.com/'.$user_info->twitter; ?>">Twitter</a></li>
 	                    <li class="linkedin"><a href="<?php echo 'http://www.linkedin.com/'.$user_info->linkedin; ?>">LinkedIn</a></li>
 	                    <li class="google"><a href="<?php echo 'http://www.plus.google.com/'.$user_info->googleplus; ?>">Google+</a></li>
-	                    <li class="skype"><a href="<?php echo 'http://www.skype.com/'.$user_info->skype; ?>">Skype</a></li>
 	                </ul><!-- /Social Links -->
 	                
                     <!--

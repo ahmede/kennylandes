@@ -6,32 +6,29 @@
 
     <!--Facebook OpenGraph tags -->
     <meta property="og:title" content="
-		<?php if (function_exists('is_tag') && is_tag()) {
-		single_tag_title('Tag Archive for &quot;'); echo '&quot; - ';
-		} elseif (is_archive()) {
-		wp_title(''); echo ' Archive - ';
-		} elseif (is_search()) {
-		echo 'Search for &quot;'.wp_specialchars($s).'&quot; - ';
-		} elseif (!(is_404()) && (is_single()) || (is_page())) {
-		wp_title(''); echo ' - ';
-		} elseif (is_404()) {
-		echo 'Not Found - ';
-		}
-		if (is_front_page() || $post->post_name == 'home') {
-		bloginfo('name'); echo ' | '; bloginfo('description');
-		} else {
-		bloginfo('name');
-		}
-		if ($paged > 1) {
-		echo ' - page '. $paged;
-		} ?>
+	    <?php if (function_exists('is_tag') && is_tag()) {
+	          single_tag_title('Tag Archive for &quot;'); echo '&quot; | ';
+	    } elseif (is_archive()) {
+	          wp_title(''); echo ' Archive - ';
+	    } elseif (is_search()) {
+	          echo 'Search for &quot;'.wp_specialchars($s).'&quot; | ';
+	    } elseif (!(is_404()) && (is_single()) || (is_page())) {
+	          wp_title(''); echo ' | ';
+	    } elseif (is_404()) {
+	          echo 'Not Found | ';
+	    }
+	    if (is_home()) {
+	          bloginfo('name'); echo ' | '; bloginfo('description');
+	    } else {
+	          bloginfo('name');
+	    } ?>
 		" />
-
 	<?php if ( !(is_404()) && (is_single()) ) { ?>
 	    <meta property="og:type" content="article" />
-	<?php } else if ( !(is_404()) && (is_page()) ) { ?>
+	<?php } elseif ( !(is_404()) && (is_page()) ) { ?>
     	<meta property="og:type" content="blog" />
-	<?php } else { ?>
+	<?php } ?>
+	<?php if (is_front_page()) { ?>
     	<meta property="og:type" content="website" />
     <?php } ?>
 
@@ -40,22 +37,21 @@
 
 	<title>
 	    <?php if (function_exists('is_tag') && is_tag()) {
-	          single_tag_title('Tag Archive for &quot;'); echo '&quot; - ';
+	          single_tag_title('Tag Archive for &quot;'); echo '&quot; | ';
 	    } elseif (is_archive()) {
-	          wp_title(''); echo ' Archive - ';
+	          wp_title(''); echo ' Archive | ';
 	    } elseif (is_search()) {
-	          echo 'Search for &quot;'.wp_specialchars($s).'&quot; - ';
+	          echo 'Search for &quot;'.wp_specialchars($s).'&quot; | ';
 	    } elseif (!(is_404()) && (is_single()) || (is_page())) {
-	          wp_title(''); echo ' - ';
+	          wp_title(''); echo ' | ';
 	    } elseif (is_404()) {
-	          echo 'Not Found - ';
+	          echo 'Not Found | ';
 	    }
-	    if (is_home()) {
-	          bloginfo('name'); echo ' - '; bloginfo('description');
+	    if (is_home() || is_front_page()) {
+	          bloginfo('name'); echo ' | '; bloginfo('description');
 	    } else {
 	          bloginfo('name');
-	    }
-	    ?>
+	    } ?>
 	</title>
 
     <meta name="description" content="<?php bloginfo('description'); ?>">

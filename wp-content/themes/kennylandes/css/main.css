@@ -92,3 +92,7 @@
 .footer-address a:hover {
 	color: #ffffff;
 }
+
+.footer-right {
+	float: right;
+}
