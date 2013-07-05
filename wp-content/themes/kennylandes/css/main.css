@@ -17,12 +17,68 @@
 	top: 1px;
 }
 
+#header #navigation .page_item.page-item-948 {
+	display: none;
+}
+
 #slider {
     margin-bottom: 60px;
 }
 
+#page-title, #page-title a {
+	float: none;
+	width: auto;
+	background-color: transparent;
+	margin-top: 5em;
+}
+
+#page-title h1 {
+	margin-bottom: 0;
+}
+
 #features .feature:nth-last-of-type(1) {  
    margin-right: 0 !important;  
+}
+
+#post-5 .social-links {
+	float: none;
+	margin-left: -.5em;
+	display: inline-block;
+}
+
+.post h2 {
+	color: #23abf1;
+}
+
+.post:nth-child(1)
+{
+	margin-top: 50px;
+}
+
+.post .alignright {
+	float: right;
+	margin: 0 0 0 1.5em;
+}
+
+.resume h2, .resume h3, .resume h4 {
+	margin: 10px 0 0;	
+}
+
+.resume h3 {
+	font-weight: 600;
+}
+
+.resume h3, .resume h4 {
+	color: #757B7F;
+}
+
+.resume p {
+	margin-top: 0;
+}
+
+.resume #main li {
+	list-style: disc inside;
+	margin-left: 1em;
 }
 
 #footer {

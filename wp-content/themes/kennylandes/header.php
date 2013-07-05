@@ -38,26 +38,24 @@
     <meta property="og:url" content="<?php the_permalink(); ?>" />
     <meta property="og:site_name" content="<?php bloginfo('name'); ?>" />
 
-    <title>
-		<?php if (function_exists('is_tag') && is_tag()) {
-		single_tag_title('Tag Archive for &quot;'); echo '&quot; - ';
-		} elseif (is_archive()) {
-		wp_title(''); echo ' Archive - ';
-		} elseif (is_search()) {
-		echo 'Search for &quot;'.wp_specialchars($s).'&quot; - ';
-		} elseif (!(is_404()) && (is_single()) || (is_page())) {
-		wp_title(''); echo '';
-		} elseif (is_404()) {
-		echo 'Not Found - ';
-		}
-		if (is_front_page() || $post->post_name == 'home') {
-		bloginfo('name'); echo ' | '; bloginfo('description');
-		} else {
-		bloginfo('name');
-		}
-		if ($paged > 1) {
-		echo ' - page '. $paged;
-		} ?>
+	<title>
+	    <?php if (function_exists('is_tag') && is_tag()) {
+	          single_tag_title('Tag Archive for &quot;'); echo '&quot; - ';
+	    } elseif (is_archive()) {
+	          wp_title(''); echo ' Archive - ';
+	    } elseif (is_search()) {
+	          echo 'Search for &quot;'.wp_specialchars($s).'&quot; - ';
+	    } elseif (!(is_404()) && (is_single()) || (is_page())) {
+	          wp_title(''); echo ' - ';
+	    } elseif (is_404()) {
+	          echo 'Not Found - ';
+	    }
+	    if (is_home()) {
+	          bloginfo('name'); echo ' - '; bloginfo('description');
+	    } else {
+	          bloginfo('name');
+	    }
+	    ?>
 	</title>
 
     <meta name="description" content="<?php bloginfo('description'); ?>">
@@ -77,7 +75,7 @@
 
 </head>
 
-<body>
+<body class="<?php echo $post->post_name; ?>">
 
 <!-- Powers Facebook -->
 <div id="fb-root"></div>
@@ -106,7 +104,7 @@
 
         <!-- Navigation -->
         <ul id="navigation">
-        	<?php wp_list_pages("title_li=&depth=1"); ?>
+        	<?php wp_list_pages("title_li=&depth=2"); ?>
         </ul><!-- /Navigation -->
 
     </div><!-- /Header -->

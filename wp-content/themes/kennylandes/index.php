@@ -35,14 +35,12 @@
 
 			                <ul class="post-details">
 			                	<?php echo get_post_meta($post->ID, 'PostThumb', true); ?>
-			                    <li class="author"><?php the_author(); ?></li>
 			                    <li class="date"><?php the_time('F jS, Y'); ?></li>
-			                    <li class="tag"><?php the_tags('Tags: ', ', ', '<br />'); ?></li>
-			                    <li class="comment"><?php comments_popup_link('No Comments;', '1 Comment', '% Comments'); ?></li>
+			                    <!-- <li class="comment"><?php comments_popup_link('No Comments;', '1 Comment', '% Comments'); ?></li> -->
 			                </ul>
 			                <div class="post-content">
 
-		                    <?php the_content('Read Full Article'); ?>
+		                    <?php the_excerpt('Read Full Article'); ?>
 
 	                    	</div>
 
@@ -52,12 +50,8 @@
 
 		            <!-- Pagination -->
 		            <ul class="pagination">
-		                <li class="prev"><?php previous_posts_link('Newer Entries'); ?></li>
-		                <li class="current">1</li>
-		                <li><a href="#">2</a></li>
-		                <li><a href="#">3</a></li>
-		                <li><a href="#">4</a></li>
-		                <li class="next"><?php next_posts_link('Older Entries'); ?></li>
+		                <li class="prev"><?php previous_posts_link('&#10094; Newer Entries'); ?></li>
+		                <li class="next"><?php next_posts_link('Previous Entries &#10095;'); ?></li>
 		            </ul><!-- /Pagination -->
 
 			<?php else : ?>

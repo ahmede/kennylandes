@@ -44,6 +44,7 @@
 </div><!-- /Revolution Slider -->
 
 <!-- Main Container -->
+<?php global $post; ?>
 <div id="body-wrapper">
 
     <!-- Content -->

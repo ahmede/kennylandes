@@ -1,6 +1,8 @@
 <?php get_header(); ?>
 
 <!-- Main Container -->
+<?php global $post; ?>
+
 <div id="body-wrapper">
 
 	<!-- Content -->
@@ -15,7 +17,7 @@
 		<!-- Page title -->
 		<nav id="page-title" >
 
-			<h1>The only bad press is no press</h1>
+			<h1><?php the_title(); ?></h1>
 
 		</nav>
 		<!-- /Page title -->
@@ -23,13 +25,20 @@
 		<!-- Main Content -->
 		<div id="main">
 
+				<?php while (have_posts()) : the_post(); ?>
 
+	            <!-- News Post -->
+	            <div class="post" id="post-<?php the_ID(); ?>">
 
+	                <div class="post-content">
 
+	                    <?php the_content('Read Full Article'); ?>
 
+                	</div>
 
+	            </div><!-- /News Post -->
 
-
+				<?php endwhile; ?>
 
 		</div><!-- Main Content -->
 
