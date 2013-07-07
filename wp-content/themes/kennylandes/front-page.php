@@ -59,7 +59,7 @@
 			$args=array(
 				'orderby' => 'id',
 				'order' => 'ASC',
-				'exclude' => '1'
+				'exclude' => '1, 6'
 				);
 			$categories=get_categories($args);
 			foreach($categories as $category): ?>
