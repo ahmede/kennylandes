@@ -20,6 +20,10 @@ function no_admin_bar()
 }
 add_filter('show_admin_bar' , 'no_admin_bar');
 
+// Disable all version information
+function wptao_disable_version_info() { return ''; }
+add_filter('the_generator', 'wptao_disable_version_info');
+
 // Allow HTML in User description field
 remove_filter('pre_user_description', 'wp_filter_kses');
 
