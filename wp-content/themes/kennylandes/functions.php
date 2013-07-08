@@ -21,8 +21,8 @@ function no_admin_bar()
 add_filter('show_admin_bar' , 'no_admin_bar');
 
 // Disable all version information
-function wptao_disable_version_info() { return ''; }
-add_filter('the_generator', 'wptao_disable_version_info');
+function kenny_disable_wp_version_info() { return ''; }
+add_filter('the_generator', 'kenny_disable_wp_version_info');
 
 // Allow HTML in User description field
 remove_filter('pre_user_description', 'wp_filter_kses');
@@ -37,6 +37,7 @@ remove_filter($filter, 'wp_filter_kses');
 remove_filter($filter, 'strip_tags');
 }
 
+// Customize Contact methods
 function kenny_contactmethods( $contactmethods ) {
 	$removes = array('yim', 'aim', 'jabber');
 	foreach ($removes as $remove)
