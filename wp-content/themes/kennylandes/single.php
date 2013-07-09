@@ -38,6 +38,8 @@
 
 				<?php endwhile; ?>
 
+				<?php comments_template(); ?>
+
 		</div><!-- Main Content -->
 
 		<?php get_sidebar(); ?>

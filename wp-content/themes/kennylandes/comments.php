@@ -1,1 +1,0 @@
-<?php comment_form_title('Leave a Comment', 'Leave a Reply to %s'); ?>
