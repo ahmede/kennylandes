@@ -54,4 +54,6 @@ function kenny_contactmethods( $contactmethods ) {
   return $contactmethods;
 }
 add_filter( 'user_contactmethods', 'kenny_contactmethods', 10, 1 );
+
+
 ?>
