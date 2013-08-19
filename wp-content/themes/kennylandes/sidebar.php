@@ -1,10 +1,10 @@
 
 <div id="sidebar">
 
-<a class="twitter-timeline" href="https://twitter.com/kennylandes" data-widget-id="353746497399054336">Tweets by @kennylandes</a>
+<a class="twitter-timeline" href="https://twitter.com/kennylandes" width="220" height="100%" data-widget-id="353746497399054336" data-chrome="noheader nofooter noborders noscrollbar transparent">Tweets by @kennylandes</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
-<!-- Sidebar 
+<!-- Sidebar
 	<h4>Search</h4>
 	<input type="text" onfocus="if(this.value == 'Search in blog') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Search in blog'; }" value="Search in blog" class="search">
 
