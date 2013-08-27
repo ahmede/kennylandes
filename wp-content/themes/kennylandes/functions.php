@@ -20,9 +20,17 @@ function no_admin_bar()
 }
 add_filter('show_admin_bar' , 'no_admin_bar');
 
-// Disable all version information
-function kenny_disable_wp_version_info() { return ''; }
-add_filter('the_generator', 'kenny_disable_wp_version_info');
+// Add support for all feeds via wp_head()
+add_theme_support( 'automatic-feed-links' );
+
+// Hides WP Generator meta tag in head element
+remove_action('wp_head', 'wp_generator');
+// Hides WP Generator meta tag in RSS XML output
+function remove_wp_version_rss()
+{
+	return'';
+}
+add_filter('the_generator','remove_wp_version_rss');
 
 // Allow HTML in User description field
 remove_filter('pre_user_description', 'wp_filter_kses');
